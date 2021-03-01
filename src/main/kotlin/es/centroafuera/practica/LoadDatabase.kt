@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 class LoadDatabase {
     companion object {
-        val logger = LoggerFactory.getLogger(LoadDatabase.javaClass)
+        val logger = LoggerFactory.getLogger(LoadDatabase.javaClass) //para sacar la info por la consola
     }
 
     @Bean

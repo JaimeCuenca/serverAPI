@@ -4,10 +4,10 @@ import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
 
-@Entity
+@Entity //Para que el objeto creado se pueda almacenar en la bbdd
 class Cerveza (var num: Int, var name : String, var foto : String){
     @Id
-    @GeneratedValue
+    @GeneratedValue //Para la clave primaria
     private val id:Long? = null
 
     override fun equals(other: Any?): Boolean {

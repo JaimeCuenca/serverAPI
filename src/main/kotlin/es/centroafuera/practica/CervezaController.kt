@@ -7,10 +7,10 @@ import javax.crypto.BadPaddingException
 import javax.crypto.Cipher
 import javax.crypto.spec.SecretKeySpec
 
-@RestController
+@RestController //Para que los datos que devuelve cada metodo se escriban por pantalla
 class CervezaController(private val repositorioCervezas: RepositorioCervezas) {
 
-    @GetMapping("/cervezas")
+    @GetMapping("/cervezas") //El value es: curl -v localhost: 8081[...]
     fun getAllCervezas():List<Cerveza>{
         return repositorioCervezas.findAll()
     }
